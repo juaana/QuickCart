@@ -11,6 +11,12 @@ const NavBar = () =>{
                         <Link className="nav-link text-dark" aria-current="page" to={"/contenido"}>Contenido</Link>
                         </li>
                         <li className="nav-item">
+                        <Link className="nav-link text-dark" aria-current="page" to={"/categoria/clothing"}>Ropa</Link>
+                        </li>
+                        <li className="nav-item">
+                        <Link className="nav-link text-dark" aria-current="page" to={"/categoria/homedecor"}>Decoracion</Link>
+                        </li>
+                        <li className="nav-item">
                             <a className="nav-link text-dark" href="#">Sobre nosotros</a>
                         </li>
                     </ul>

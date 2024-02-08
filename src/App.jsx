@@ -8,8 +8,9 @@ const App=()=> {
     <BrowserRouter>
     <Header/>
       <Routes>
-          <Route path="/" element={<ItemListContainer/>}/>
-          <Route path="/contenido" element={<Contenido/>}/>
+          <Route path={"/"} element={<ItemListContainer/>}/>
+          <Route path={"/categoria/:categoria"} element={<ItemListContainer/>}/>
+          <Route path={"/contenido"} element={<Contenido/>}/>
       </Routes>
     </BrowserRouter>
 
