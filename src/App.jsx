@@ -1,12 +1,18 @@
+import Contenido from "./components/Contenido"
 import ItemListContainer from "./components/ItemListContainer"
 import Header from "./components/header"
+import { BrowserRouter, Routes, Route } from "react-router-dom"
 
 const App=()=> {
   return (
-    <div>
-      <Header/>
-      <ItemListContainer greeting={"Pedido realizado"}/>
-    </div>
+    <BrowserRouter>
+    <Header/>
+      <Routes>
+          <Route path="/" element={<ItemListContainer/>}/>
+          <Route path="/contenido" element={<Contenido/>}/>
+      </Routes>
+    </BrowserRouter>
+
     
   )
 }
