@@ -1,24 +1,22 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import CartWidget from "./CartWidget";
 const NavBar = () =>{
     return(         <div className="container d-flex justify-content-center align-items-center"> 
                     <div className="my-2 container">
                     <ul className="nav">
                         <li className="nav-item  ">
-                            <Link className="nav-link text-dark" aria-current="page" to={"/"}>Inicio</Link>
+                            <NavLink className="nav-link text-dark" aria-current="page" to={"/"}>Inicio</NavLink>
                         </li>
                         <li className="nav-item">
-                        <Link className="nav-link text-dark" aria-current="page" to={"/contenido"}>Contenido</Link>
+                        <NavLink className="nav-link text-dark" aria-current="page" to={"/contenido"}>Contenido</NavLink>
                         </li>
                         <li className="nav-item">
-                        <Link className="nav-link text-dark" aria-current="page" to={"/categoria/clothing"}>Ropa</Link>
+                        <NavLink className="nav-link text-dark" aria-current="page" to={"/categoria/clothing"}>Ropa</NavLink>
                         </li>
                         <li className="nav-item">
-                        <Link className="nav-link text-dark" aria-current="page" to={"/categoria/homedecor"}>Decoracion</Link>
+                        <NavLink className="nav-link text-dark" aria-current="page" to={"/categoria/homedecor"}>Decoracion</NavLink>
                         </li>
-                        <li className="nav-item">
-                            <a className="nav-link text-dark" href="#">Sobre nosotros</a>
-                        </li>
+
                     </ul>
                     </div>
                     <div className="my-2">
