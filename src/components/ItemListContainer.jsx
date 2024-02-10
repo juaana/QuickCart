@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import arrayProductos from "./json/data.json"
 import { useParams } from "react-router-dom";
+import ItemDetailContainer from "./ItemDetailContainer";
 const ItemListContainer = () => {
     const[productos, setProductos] = useState([]);
     const {categoria} = useParams();
@@ -16,19 +17,7 @@ const ItemListContainer = () => {
 
     },[categoria])
     return (
-        <div className="container">
-            <div className="row">
-                {productos.map(item => (
-                    <div className="card text-center border-0" >
-                         <img src={item.image} className="card-img-top" alt={item.name}/>
-                         <div className="card-body">
-                            <h5 className="card-title"> {item.name}</h5>
-                            <p className="card-text">{item.description}</p>
-                         </div>
-                    </div>
-                ))}
-            </div>
-        </div>
+       <ItemDetailContainer/>
     )
 }
 export default ItemListContainer;
