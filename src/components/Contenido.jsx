@@ -1,7 +1,7 @@
 const Contenido =()=>{
     return(
         <div> 
-        Hola
+        Prueba
          </div>
     )
 

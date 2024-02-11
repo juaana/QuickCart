@@ -3,7 +3,7 @@ import L from "../assets/logo.png"
 const Logo = () =>{
     return (
         <NavLink to={"/"}>
-        <img src={L} alt="" />
+            <img src={L} alt="" />
         </NavLink>
     )
 }
